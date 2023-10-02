@@ -21,12 +21,16 @@ public class Vehiculo {
 		this.peso=peso;
 		this.traccion=traccion;
 		this.fabricante=fabricante;
-		CantidadVehiculos++;
+		Vehiculo.CantidadVehiculos++;
 	}
 	
 	public static int getCantidadVehiculos() {
-        return CantidadVehiculos;
+        return Vehiculo.CantidadVehiculos;
     }
+	
+	public static void setCantidadVehiculos(int cantidad) {
+		Vehiculo.CantidadVehiculos=cantidad;
+	}
 
     public String getPlaca() {
         return placa;
