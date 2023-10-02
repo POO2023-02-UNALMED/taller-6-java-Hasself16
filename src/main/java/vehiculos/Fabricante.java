@@ -11,7 +11,7 @@ public class Fabricante {
 	
 	public Fabricante(String nombre, Pais pais) {
 		this.nombre=nombre;
-		this.pais=pais;
+		setPais(pais);
 		Fabricante.listado.add(this);
 	}
 	
@@ -29,6 +29,7 @@ public class Fabricante {
 	
 	public void setPais(Pais pais) {
 		this.pais=pais;
+		pais.anadirFabrica(this);
 	}
 	
 	public void anadirVehiculo(Vehiculo vehiculo) {
@@ -45,5 +46,9 @@ public class Fabricante {
 			}
 		}
 		return (x);
+	}
+	
+	public int vehiculos() {
+		return (this.vehiculos.size());
 	}
 }
