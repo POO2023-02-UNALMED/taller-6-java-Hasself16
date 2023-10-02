@@ -94,7 +94,7 @@ public class Vehiculo {
 
     public void setFabricante(Fabricante fabricante) {
         this.fabricante = fabricante;
-        fabricante.añadirVehiculo(this);
+        fabricante.anadirVehiculo(this);
     }
     
     public String vehiculosPorTipo() {

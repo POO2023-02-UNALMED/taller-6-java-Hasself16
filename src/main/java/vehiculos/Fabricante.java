@@ -31,7 +31,7 @@ public class Fabricante {
 		this.pais=pais;
 	}
 	
-	public void añadirVehiculo(Vehiculo vehiculo) {
+	public void anadirVehiculo(Vehiculo vehiculo) {
 		this.vehiculos.add(vehiculo);
 	}
 	
