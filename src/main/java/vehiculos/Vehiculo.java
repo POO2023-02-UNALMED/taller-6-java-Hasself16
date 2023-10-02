@@ -20,7 +20,7 @@ public class Vehiculo {
 		this.precio=precio;
 		this.peso=peso;
 		this.traccion=traccion;
-		this.fabricante=fabricante;
+		setFabricante(fabricante);
 		Vehiculo.CantidadVehiculos++;
 	}
 	
@@ -94,10 +94,10 @@ public class Vehiculo {
 
     public void setFabricante(Fabricante fabricante) {
         this.fabricante = fabricante;
+        fabricante.añadirVehiculo(this);
     }
     
     public String vehiculosPorTipo() {
     	return ("Automoviles: " + Automovil.getCantidadAutomoviles() + "\n Camionetas :" + Camioneta.getCantidadCamionetas() + "\n Camiones :"+ Camion.getCantidadCamiones());
     }
-
 }
