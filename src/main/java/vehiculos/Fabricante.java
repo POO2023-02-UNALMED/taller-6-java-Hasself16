@@ -35,7 +35,7 @@ public class Fabricante {
 		this.vehiculos.add(vehiculo);
 	}
 	
-	public Fabricante fabricaMayorVentas() {
+	public static Fabricante fabricaMayorVentas() {
 		Fabricante x = null;
 		int n=0;
 		for (Fabricante fabricante: Fabricante.listado) {
