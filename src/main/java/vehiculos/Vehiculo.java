@@ -91,5 +91,9 @@ public class Vehiculo {
     public void setFabricante(Fabricante fabricante) {
         this.fabricante = fabricante;
     }
+    
+    public String vehiculosPorTipo() {
+    	return ("Automoviles: " + Automovil.getCantidadAutomoviles() + "\n Camionetas :" + Camioneta.getCantidadCamionetas() + "\n Camiones :"+ Camion.getCantidadCamiones());
+    }
 
 }
